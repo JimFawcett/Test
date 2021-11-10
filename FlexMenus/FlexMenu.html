@@ -2,88 +2,16 @@
 <html>
     <head>
         <title>Test Flex Menu</title>
-        <style>
-            /* html {
-                font-family:sans-serif;
-            } */
-            body {
-                box-sizing: border-box;
-                font-family:Tahoma, sans-serif;
-                margin:1em;
-                border:1px solid black;
-            }
-            div.navbar {
-                position:relative;
-                display:flex;
-                flex-basis: 100%;
-                /* width:100%; */
-                height:2em;
-                padding:0em 1em;
-                border:1px solid red;
-            }
-            div.navbar a:link {
-                color: #010101
-            }
-            div.menuItem {
-                display:flex;
-                position:relative;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding:0em 0.5em;
-                border:1px solid green;
-            }
-            div.menuItem a {
-                text-decoration: none;
-            }
-            div.menuItem:hover {
-                background-color:#ddd;
-            }
-            div.menuItem:hover .dropdown {
-                display:flex;
-                flex-direction: column;
-                white-space: nowrap;
-            }
-            div.dropdown {
-                display:none;
-                position:absolute;
-                top:1.95em;
-                float: left;
-                left:0em;
-                /* padding:0.25em 0.5em; */
-                box-shadow: 8px 8px 16px #ccc;
-                border:1px solid black;
-                z-index: 10;
-            }
-            div.ddItem {
-                padding:0.25em 0.5em;
-            }
-            div.dropdown .ddItem:hover {
-                background-color: #ddd;
-            }
-            .ligthItem {
-                background-color: #efefef;
-                color: #010101;
-            }
-            .darkItem {
-                background-color: #010101;
-                color: #efefef;
-            }
-            /* div.dropdown .ddIterm:hover .expand {
-                background-color: #010101;
-                color: #efefef;                
-            } */
-            div.ddLabel {
-                padding:0.25em 0.5em;
-            }
-        </style>
-        <script>
-
-        </script>
+        <link rel="stylesheet" href="css/StylesFlexMenus.css" />
+        <script src="js/ScriptFlexMenus.js"></script>
     </head>
-    <body class="lightItem">
+    <body class="lightItem" onload="initializeMenu()">
+        <nav>
+            <div id="navbar"></div>
+          </nav>
+        
         <h2>Test flex menu</h2>
-        <div class="navbar">
+        <!-- <div class="navbar">
             <div class="menuItem"><a href="https://jimfawcett.github.io/">github home</a></div>
             <div class="menuItem">
                 Tracks&#9662
@@ -107,7 +35,8 @@
                     <div class="ddItem"><a href="https://jimfawcett.github.io/OtherRepositories.html">Other</a></div>
                     <div style="height:1em;"></div>
                 </div>
-            </div>
+            </div> -->
+            <nav></nav>
         </div>
     </body>
 </html>

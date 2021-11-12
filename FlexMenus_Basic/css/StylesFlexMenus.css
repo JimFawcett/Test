@@ -2,7 +2,7 @@
 body {
     box-sizing: border-box;
     font-family:Tahoma, sans-serif;
-    margin:0em 2em;
+    margin:1em;
     /* border:1px solid black; */
 }
 div.navbar {
@@ -28,7 +28,6 @@ div.menuItem {
 }
 div.menuItem a {
     text-decoration: none;
-    color:black;
 }
 div.menuItem:hover {
     background-color:#ddd;
@@ -46,28 +45,15 @@ div.dropdown {
     left:0em;
     /* padding:0.25em 0.5em; */
     background-color: #fff;
-    box-shadow: 8px 8px 8px -2px #aaa;
+    box-shadow: 8px 8px 16px #ccc;
     border:1px solid black;
     z-index: 10;
 }
 div.ddItem {
-    padding:0.05em 0.5em;
-    font-size:0.9em;
-}
-div.ddItem a {
-    color:black;
+    padding:0.25em 0.5em;
 }
 div.dropdown .ddItem:hover {
     background-color: #ddd;
-}
-div.dropdown .ddDetails {
-    background-color:white;
-}
-div.dropdown .ddDetails:hover {
-    background-color:#ddd;
-}
-#Next, #Prev {
-    display:none;
 }
 .ligthItem {
     background-color: #efefef;
@@ -104,29 +90,15 @@ div.nextprev {
  */
 nav button.menuScroll {
     position: fixed;
-    top: 0em;
-    right: 4.05em;
+    top: 1.2em;
+    right: 3.05em;
     padding: 0.45em 8px;
   }
   
   nav button.menuUnscroll {
     position: fixed;
-    top: 0em;
-    right: 2.25em;
+    top: 1.2em;
+    right: 1.25em;
     padding: 0.45em 8px;
   }
-  info-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 5px 40px;
-    text-align:center;
-    width: 100%;
-    border-top: 1px solid #333;
-    background-color: #eee;
-    font-size: 16px;
-    z-index:100;
-    cursor:pointer;
-  }
-  
   

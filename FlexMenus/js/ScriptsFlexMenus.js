@@ -68,8 +68,8 @@ function scrollMenuLeft() {
     var i;
     for (i = 0; i < items.length; ++i) {
       var cpprp = window.getComputedStyle(items[len - i - 1], null).getPropertyValue("display");
-      if (cpprp !== "block") {
-        items[len-i-1].style.display = "block";
+      if (cpprp !== "flex") {
+        items[len-i-1].style.display = "flex";
         break;
       }
     }
